@@ -1,0 +1,19 @@
+{
+  "name": "letsencrypt-heroku",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "letsencrypt",
+    "heroku"
+  ],
+  "author": "castle",
+  "license": "ISC",
+  "dependencies": {
+    "heroku-cli-util": "^6.1.8",
+    "letsencrypt": "^2.1.8"
+  }
+}
