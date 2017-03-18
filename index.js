@@ -1,11 +1,10 @@
 'use strict';
 
-
 module.exports.topic = {
-    name: 'le',
-    description: 'Lets encrypt plugin'
+  name: 'le',
+  description: 'Lets encrypt plugin'
 };
 
 module.exports.commands = [
-    require('./lib/commands/certify')
+  require('./lib/commands/certify')
 ];
