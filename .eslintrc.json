@@ -1,3 +1,7 @@
 {
-  "extends": "eslint-config-airbnb-es5"
+  "plugins": ["node"],
+  "extends": ["eslint-config-airbnb-es5", "plugin:node/recommended"],
+  "rules": {
+    "node/exports-style": ["error", "module.exports"]
+  }
 }
