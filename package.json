@@ -11,6 +11,10 @@
     "letsencrypt",
     "heroku"
   ],
+  "engineStrict" : true,
+  "engines": {
+    "node": ">=7.0.0"
+  },
   "author": "castle",
   "license": "ISC",
   "dependencies": {
