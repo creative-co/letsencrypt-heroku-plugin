@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports.topic = {
-  name: 'le',
-  description: 'Lets encrypt plugin'
+  name: 'letsencrypt',
+  description: 'Heroku plugin which implements ACME protocol to generate SSL certificates via LetsEncrypt and update Heroku SNI endpoints'
 };
 
 module.exports.commands = [
-  require('./lib/commands/certify')
+  require('./lib/commands/run')
 ];
