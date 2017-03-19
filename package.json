@@ -11,7 +11,7 @@
     "letsencrypt",
     "heroku"
   ],
-  "engineStrict" : true,
+  "engineStrict": true,
   "engines": {
     "node": ">=7.0.0"
   },
@@ -22,7 +22,7 @@
     "debug": "^2.6.3",
     "heroku-cli-util": "^6.1.8",
     "letsencrypt": "^2.1.8",
-    "request": "^2.81.0"
+    "redis": "^2.7.1"
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
