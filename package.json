@@ -1,7 +1,7 @@
 {
-  "name": "letsencrypt-heroku",
-  "version": "1.0.0",
-  "description": "",
+  "name": "letsencrypt-heroku-plugin",
+  "version": "0.0.1",
+  "description": "Heroku plugin which makes it easy to maintain an SNI SSL endpoint with a certificate obtained via LetsEncrypt",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
