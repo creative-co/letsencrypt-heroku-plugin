@@ -47,7 +47,7 @@ to your API key from your [Heroku account page](https://dashboard.heroku.com/acc
 ### Configuration options
 
 By default, the plugin will only issue a new certificate if the current certificate expires
-in 14 days or less. You can tune this behavior by setting `EXPIRATION_THRESHOLD` to a different number of days.
+in 7 days or less. You can tune this behavior by setting `EXPIRATION_THRESHOLD` to a different number of days.
 
 You can force certificate re-creation using `--force` CLI option.
 
@@ -55,15 +55,24 @@ NOTE: There is a rate limit on the API (~5 certificates per week).
 Set `LETSENCRYPT_SERVER` environment variable to `staging` when experimenting to overcome this limitation.
 Remember: staging certificates are not generally trusted and should be only used for experiments.
 
+### Troubleshooting
+
+Set `HEROKU_DEBUG` and/or `LETSENCRYPT_DEBUG` env variables to `1` to see Heroku API logs and ACME details.
+
+You might need to reset certbot cache in case you experimented with staging LetsEncrypt server first
+and then switched to production LetsEncrypt server. On MacOS, just delete `~/letsencrypt` folder.
+
 ### TODO
 
 * linting
 * (?) ES6 modules
+* le-store-in-memory to avoid caching issues and  rm -rf ~/letsencrypt
 * multiple domains per app
 * wildcard domains
 * checking whether domains list changed / matches current alt names on the certificate
 * packaged server implementations (Rails / Rack / Express / Koa / ....)
 * validating DNS setup (CNAME checks / interactive guide)
+
 
 ### Authors
 
