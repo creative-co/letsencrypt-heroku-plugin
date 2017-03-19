@@ -19,7 +19,6 @@
   "license": "ISC",
   "dependencies": {
     "co": "^4.6.0",
-    "debug": "^2.6.3",
     "greenlock": "^2.1.12",
     "heroku-cli-util": "^6.1.8",
     "redis": "^2.7.1",
