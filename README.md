@@ -1,4 +1,4 @@
-## Heroku Letsencrypt Plugin
+## Letsencrypt Heroku Plugin
 
 Heroku plugin which makes it easy to maintain an SNI SSL endpoint with a certificate
 obtained via LetsEncrypt. Integrate it into your CI to get auto-renewal.
@@ -6,7 +6,7 @@ obtained via LetsEncrypt. Integrate it into your CI to get auto-renewal.
 ### Installation
 
 ```bash
-$ heroku plugins:install heroku-letsencrypt
+$ heroku plugins:install letsencrypt-heroku-plugin
 ```
 
 ### Usage
@@ -72,7 +72,7 @@ and then switched to production LetsEncrypt server. On MacOS, just delete `~/let
 * checking whether domains list changed / matches current alt names on the certificate
 * packaged server implementations (Rails / Rack / Express / Koa / ....)
 * validating DNS setup (CNAME checks / interactive guide)
-
+* CI setup
 
 ### Authors
 
