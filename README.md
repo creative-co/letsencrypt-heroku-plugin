@@ -1,4 +1,11 @@
-## Letsencrypt Heroku Plugin
+## Letsencrypt Heroku Plugin [DEPRECATED]
+
+### This plugin is deprecated
+
+Please use [Heroku Automated Certificate Management](https://devcenter.heroku.com/articles/automated-certificate-management) instead
+
+
+### Info
 
 Heroku plugin which makes it easy to maintain an SNI SSL endpoint with a certificate
 obtained via LetsEncrypt. Integrate it into your CI to get auto-renewal.
